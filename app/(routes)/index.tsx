@@ -1,12 +1,10 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import OnBoardingScreen from "@/screens/onboarding.screen";
+import React from "react";
 
-const index = () => {
-  return (
-    <View>
-      <Text>Onboarding</Text>
-    </View>
-  );
+export default function Onboarding() {
+
+  return <OnBoardingScreen />;
+  
 }
 
-export default index;
+
