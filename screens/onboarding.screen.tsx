@@ -1,6 +1,7 @@
+import OnBoarding1 from '@/assets/images/svgs/onboarding1';
 import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 
 export default function OnboardingScreen() {
   return (
@@ -10,7 +11,8 @@ export default function OnboardingScreen() {
       end={{ x: 1, y: 1 }}
       style={styles.container}
     >
-      <Text>Welcome to the app!</Text>
+      <StatusBar barStyle="light-content" />
+      <OnBoarding1 />
     </LinearGradient>
   );
 }
@@ -20,5 +22,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });
